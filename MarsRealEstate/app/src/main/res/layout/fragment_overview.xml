@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:toolsNs="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.marsrealestate.overview.OverviewViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Response"
+            android:text="@{viewModel.property.imgSrcUrl}"
+            toolsNs:layout_constraintBottom_toBottomOf="parent"
+            toolsNs:layout_constraintEnd_toEndOf="parent"
+            toolsNs:layout_constraintStart_toStartOf="parent"
+            toolsNs:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
