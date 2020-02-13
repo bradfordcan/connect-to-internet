@@ -9,6 +9,10 @@
             name="viewModel"
             type="com.example.marsrealestate.overview.OverviewViewModel" />
 
+        <variable
+            name="property"
+            type="com.example.marsrealestate.network.MarsProperty" />
+
     </data>
 
     <ImageView
@@ -18,6 +22,6 @@
         android:adjustViewBounds="true"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
-        app:imageUrl="@{viewModel.property.imgSrcUrl}"
+        app:imageUrl="@{property.imgSrcUrl}"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 </layout>
